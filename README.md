@@ -1,3 +1,3 @@
 # vmprofiler
 
-Library To Profile VMProtect 2 Virtual Machines
+Library To Profile VMProtect 2 Virtual Machines test
