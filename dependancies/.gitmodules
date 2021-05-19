@@ -1,0 +1,3 @@
+[submodule "zydis-3.1.0"]
+  path = zydis-3.1.0
+  url = https://github.com/zyantific/zydis/commit/bfee99f49274a0eec3ffea16ede3a5bda9cda88f
