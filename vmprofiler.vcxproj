@@ -114,6 +114,11 @@
     <ClInclude Include="Zydis\Utils.h" />
     <ClInclude Include="Zydis\Zydis.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="dependancies\zydis\msvc\zydis\Zydis.vcxproj">
+      <Project>{88a23124-5640-35a0-b890-311d7a67a7d2}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
