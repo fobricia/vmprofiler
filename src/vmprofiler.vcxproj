@@ -33,7 +33,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(ProjectDir);$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..\include\;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -63,59 +63,59 @@
     <ClCompile Include="vmutils.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="vmctx.h" />
-    <ClInclude Include="vmp2.hpp" />
-    <ClInclude Include="vmprofiler.hpp" />
-    <ClInclude Include="transform.hpp" />
-    <ClInclude Include="vm.h" />
-    <ClInclude Include="vmutils.h" />
-    <ClInclude Include="ZycoreExportConfig.h" />
-    <ClInclude Include="Zycore\Allocator.h" />
-    <ClInclude Include="Zycore\API\Memory.h" />
-    <ClInclude Include="Zycore\API\Process.h" />
-    <ClInclude Include="Zycore\API\Synchronization.h" />
-    <ClInclude Include="Zycore\API\Terminal.h" />
-    <ClInclude Include="Zycore\API\Thread.h" />
-    <ClInclude Include="Zycore\ArgParse.h" />
-    <ClInclude Include="Zycore\Bitset.h" />
-    <ClInclude Include="Zycore\Comparison.h" />
-    <ClInclude Include="Zycore\Defines.h" />
-    <ClInclude Include="Zycore\Format.h" />
-    <ClInclude Include="Zycore\LibC.h" />
-    <ClInclude Include="Zycore\List.h" />
-    <ClInclude Include="Zycore\Object.h" />
-    <ClInclude Include="Zycore\Status.h" />
-    <ClInclude Include="Zycore\String.h" />
-    <ClInclude Include="Zycore\Types.h" />
-    <ClInclude Include="Zycore\Vector.h" />
-    <ClInclude Include="Zycore\Zycore.h" />
-    <ClInclude Include="ZydisExportConfig.h" />
-    <ClInclude Include="Zydis\Decoder.h" />
-    <ClInclude Include="Zydis\DecoderTypes.h" />
-    <ClInclude Include="Zydis\Formatter.h" />
-    <ClInclude Include="Zydis\FormatterBuffer.h" />
-    <ClInclude Include="Zydis\Generated\EnumInstructionCategory.h" />
-    <ClInclude Include="Zydis\Generated\EnumISAExt.h" />
-    <ClInclude Include="Zydis\Generated\EnumISASet.h" />
-    <ClInclude Include="Zydis\Generated\EnumMnemonic.h" />
-    <ClInclude Include="Zydis\Generated\EnumRegister.h" />
-    <ClInclude Include="Zydis\Internal\DecoderData.h" />
-    <ClInclude Include="Zydis\Internal\FormatterATT.h" />
-    <ClInclude Include="Zydis\Internal\FormatterBase.h" />
-    <ClInclude Include="Zydis\Internal\FormatterIntel.h" />
-    <ClInclude Include="Zydis\Internal\SharedData.h" />
-    <ClInclude Include="Zydis\Internal\String.h" />
-    <ClInclude Include="Zydis\MetaInfo.h" />
-    <ClInclude Include="Zydis\Mnemonic.h" />
-    <ClInclude Include="Zydis\Register.h" />
-    <ClInclude Include="Zydis\SharedTypes.h" />
-    <ClInclude Include="Zydis\ShortString.h" />
-    <ClInclude Include="Zydis\Status.h" />
-    <ClInclude Include="Zydis\Utils.h" />
-    <ClInclude Include="Zydis\Zydis.h" />
+    <ClInclude Include="..\include\transform.hpp" />
+    <ClInclude Include="..\include\vm.h" />
+    <ClInclude Include="..\include\vmctx.h" />
+    <ClInclude Include="..\include\vmp2.hpp" />
+    <ClInclude Include="..\include\vmprofiler.hpp" />
+    <ClInclude Include="..\include\vmutils.h" />
+    <ClInclude Include="..\include\ZycoreExportConfig.h" />
+    <ClInclude Include="..\include\Zycore\Allocator.h" />
+    <ClInclude Include="..\include\Zycore\API\Memory.h" />
+    <ClInclude Include="..\include\Zycore\API\Process.h" />
+    <ClInclude Include="..\include\Zycore\API\Synchronization.h" />
+    <ClInclude Include="..\include\Zycore\API\Terminal.h" />
+    <ClInclude Include="..\include\Zycore\API\Thread.h" />
+    <ClInclude Include="..\include\Zycore\ArgParse.h" />
+    <ClInclude Include="..\include\Zycore\Bitset.h" />
+    <ClInclude Include="..\include\Zycore\Comparison.h" />
+    <ClInclude Include="..\include\Zycore\Defines.h" />
+    <ClInclude Include="..\include\Zycore\Format.h" />
+    <ClInclude Include="..\include\Zycore\LibC.h" />
+    <ClInclude Include="..\include\Zycore\List.h" />
+    <ClInclude Include="..\include\Zycore\Object.h" />
+    <ClInclude Include="..\include\Zycore\Status.h" />
+    <ClInclude Include="..\include\Zycore\String.h" />
+    <ClInclude Include="..\include\Zycore\Types.h" />
+    <ClInclude Include="..\include\Zycore\Vector.h" />
+    <ClInclude Include="..\include\Zycore\Zycore.h" />
+    <ClInclude Include="..\include\ZydisExportConfig.h" />
+    <ClInclude Include="..\include\Zydis\Decoder.h" />
+    <ClInclude Include="..\include\Zydis\DecoderTypes.h" />
+    <ClInclude Include="..\include\Zydis\Formatter.h" />
+    <ClInclude Include="..\include\Zydis\FormatterBuffer.h" />
+    <ClInclude Include="..\include\Zydis\Generated\EnumInstructionCategory.h" />
+    <ClInclude Include="..\include\Zydis\Generated\EnumISAExt.h" />
+    <ClInclude Include="..\include\Zydis\Generated\EnumISASet.h" />
+    <ClInclude Include="..\include\Zydis\Generated\EnumMnemonic.h" />
+    <ClInclude Include="..\include\Zydis\Generated\EnumRegister.h" />
+    <ClInclude Include="..\include\Zydis\Internal\DecoderData.h" />
+    <ClInclude Include="..\include\Zydis\Internal\FormatterATT.h" />
+    <ClInclude Include="..\include\Zydis\Internal\FormatterBase.h" />
+    <ClInclude Include="..\include\Zydis\Internal\FormatterIntel.h" />
+    <ClInclude Include="..\include\Zydis\Internal\SharedData.h" />
+    <ClInclude Include="..\include\Zydis\Internal\String.h" />
+    <ClInclude Include="..\include\Zydis\MetaInfo.h" />
+    <ClInclude Include="..\include\Zydis\Mnemonic.h" />
+    <ClInclude Include="..\include\Zydis\Register.h" />
+    <ClInclude Include="..\include\Zydis\SharedTypes.h" />
+    <ClInclude Include="..\include\Zydis\ShortString.h" />
+    <ClInclude Include="..\include\Zydis\Status.h" />
+    <ClInclude Include="..\include\Zydis\Utils.h" />
+    <ClInclude Include="..\include\Zydis\Zydis.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\dependancies\zydis\msvc\zydis\Zydis.vcxproj">
+    <ProjectReference Include="..\dependencies\zydis\msvc\zydis\Zydis.vcxproj">
       <Project>{88a23124-5640-35a0-b890-311d7a67a7d2}</Project>
     </ProjectReference>
   </ItemGroup>
